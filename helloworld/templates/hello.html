@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hello, World!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        .text {
+            font-size: 8em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin: 0;
+            color: white;
+            text-shadow: 0 0 5px lightblue, 0 0 10px blue, 0 0 15px lightblue, 0 0 20px lightblue, 0 0 25px lightblue, 0 0 30px lightblue, 0 0 35px lightblue, 0 0 40px lightblue;
+            animation: fade 3s infinite alternate;
+        }
+
+        @keyframes fade {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .text {
+                font-size: 6em; /* Adjust font size for smaller screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .text {
+                font-size: 4em; /* Further adjust font size for even smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="text">Hello, World!</span>
+    </div>
+</body>
+</html>
